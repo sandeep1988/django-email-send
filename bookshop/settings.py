@@ -49,12 +49,10 @@ ALLOWED_HOSTS = []
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'username@gmail.com'
-EMAIL_HOST_PASSWORD = 'password'
-DEFAULT_FROM_EMAIL = 'sanuptpm20@gmail.com'
+EMAIL_HOST_USER = 'testing.demo@gmail.com'
+EMAIL_HOST_PASSWORD = 'this@admin'
+DEFAULT_FROM_EMAIL = 'testing.demo@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-
 
 
 
@@ -100,7 +98,7 @@ WSGI_APPLICATION = 'bookshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db12.sqlite3'),
     }
 }
 

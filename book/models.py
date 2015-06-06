@@ -10,7 +10,7 @@ from PIL import Image
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
     address = models.CharField(max_length=100)
-    phone = models.IntegerField(max_length=10)
+    phone = models.IntegerField()
 
 class Catagory(models.Model):
 	cname=models.CharField(max_length=200)

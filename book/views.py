@@ -64,6 +64,7 @@ def user_account(request):
     return render(request,'account.html')
 @login_required
 def change_password(request):
+    import pdb; pdb.set_trace()
     newpassword = request.POST.get("newpassword")
     renewpasssword = request.POST.get("renewpasssword")
     username=request.user.username
